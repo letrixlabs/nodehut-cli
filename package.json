@@ -1,0 +1,63 @@
+{
+  "name": "nodehut-cli",
+  "version": "0.1.0",
+  "description": "A command-line tool for managing your account at Node Hut",
+  "license": "Apache-2.0",
+  "scripts": {
+    "format": "prettier . --write",
+    "lint": "eslint .",
+    "prerelease": "node utils/updateVersionOnRelease.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/letrixlabs/nodehut-cli.git"
+  },
+  "author": {
+    "name": "Harrison Ratcliffe",
+    "email": "harrison@letrixlabs.com",
+    "url": "https://letrixlabs.com"
+  },
+  "type": "module",
+  "bin": {
+    "nodehut": "index.js",
+    "nodehut-cli": "index.js",
+    "nhcli": "index.js",
+    "nhc": "index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "index.js",
+    "commands/",
+    "utils/",
+    "config.js"
+  ],
+  "keywords": [
+    "cli",
+    "node hut",
+    "nodehut",
+    "nodehut-cli",
+    "node hut cli",
+    "letrix labs"
+  ],
+  "dependencies": {
+    "@inquirer/prompts": "^7.4.0",
+    "axios": "^1.8.4",
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "configstore": "^7.0.0",
+    "inquirer": "^12.5.0",
+    "node-emoji": "^2.2.0",
+    "yocto-spinner": "^0.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "eslint": "^9.23.0",
+    "globals": "^16.0.0",
+    "prettier": "3.5.3",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "typescript": "^5.8.2"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
