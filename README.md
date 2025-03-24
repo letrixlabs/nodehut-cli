@@ -56,7 +56,7 @@ This will display the version of the CLI tool along with the name:
 
 ```
 Node Hut CLI Version:
-v0.1.0
+v0.0.0
 ```
 
 ## Authentication Commands
